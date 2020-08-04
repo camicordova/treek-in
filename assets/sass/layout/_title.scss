@@ -1,0 +1,56 @@
+.title {
+    height: 100vh;
+    position: relative;
+    background-color: $eerie-black;
+
+    &__background {
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        opacity: 0.6;
+    }
+    &__content {
+        color:white;
+        font-family: $playfair;
+        font-style: italic;
+        font-weight: $black;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+
+        h1 {
+            max-width: 80%;
+            text-align: center;
+            font-size: $xm-large;
+            @include media-breakpoint-up(md) {
+                & {
+                    max-width: 60%;
+                    font-size: $xx-large;
+                }
+            }
+        }
+    }
+
+    &__chevron {
+        position: absolute;
+        color: white;
+        z-index: 3;
+        font-size: $x-large;
+        transform: translate(-50%,0%);
+        left: 50%;
+        bottom: 40px;
+
+        .fas:last-of-type {
+            margin-top: -15px;
+        }
+
+    }
+}

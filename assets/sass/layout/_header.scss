@@ -1,0 +1,40 @@
+.header {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 4;
+
+    &__navbar {
+        background-color: $eerie-black;
+        color: $white;
+        height: 96px;
+
+        &__logo {
+            img {
+                width: 81px;
+            }
+        }
+
+        &__toggler {
+            border: none;
+            text-align: center;
+
+            &__icon {
+                background: none !important;
+                font-size: 28px;
+                color: $white !important;
+            }
+
+        }
+
+        &__menu {
+            .nav-link {
+                color: $white !important;
+
+                &.active {
+                    color: $fuzzy-wuzzy !important;
+                }
+            }
+        }
+    }
+}

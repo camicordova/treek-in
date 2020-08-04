@@ -1,0 +1,14 @@
+.article {
+
+    &__date {
+        font-size: $medium;
+        font-family: $playfair;
+        color: $raisin-black;
+    }
+    &__content {
+        font-size: $medium;
+        font-family: $roboto;
+        color: $raisin-black;
+        line-height: 45px;
+    }
+}

@@ -1,0 +1,26 @@
+.pagination {
+    height: 156px;
+    background-color: $light-gray;
+
+    .pagination {
+        height: auto;
+        overflow: hidden;
+        border-radius: 50px 50px;
+        
+
+        .page-item {
+            &:not(.disabled) {
+                .page-link {
+                    color: $eerie-black;
+                }
+            }
+            &.active {
+                .page-link {
+                    background-color: $eerie-black !important;
+                    color: $white;
+                    border-color: $eerie-black;
+                }
+            }
+        }
+    }
+}

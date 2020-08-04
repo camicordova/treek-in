@@ -1,0 +1,35 @@
+a.link{
+    font-family: $roboto;
+    font-weight: $light;
+    text-decoration: none;
+
+    &__primary
+    {
+        color: $ruddy-pink;
+    }
+
+    &__secondary
+    {
+        color: $raisin-black;
+    }
+
+    &__light
+    {
+        color: $light-gray;
+    }
+
+    &__dark
+    {
+        color: $eerie-black;
+    }
+
+    &:hover
+    {
+        color: $raisin-black;
+    }
+
+    &:active
+    {
+        color: $platinum;
+    }
+}
