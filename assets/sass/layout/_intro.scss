@@ -1,0 +1,24 @@
+.intro {
+    background-image: url('../images/bg-hero.svg');
+    background-position: right bottom;
+    height: 100vh;
+    padding-top: 96px;
+    background-size: 160%;
+    background-repeat: no-repeat;
+    font-family: $raleway;
+
+    &__content {
+        margin-top: 15px;
+        h1 {
+            font-size: $xxxx-large;
+            color: $raising-black;
+            line-height: 60px;
+            margin: 0px;
+        }
+        p {
+           font-size: $medium;
+           font-weight: $bold;
+           line-height: $x-large; 
+        }
+    }
+}

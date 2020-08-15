@@ -5,24 +5,45 @@
     z-index: 4;
 
     &__navbar {
-        background-color: $eerie-black;
-        color: $white;
+        background-color: $white;
+        color: $raising-black;
         height: 96px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
 
         &__logo {
-            img {
-                width: 81px;
+            font-size: $xxxxx-large;
+            font-family: $raleway;
+            font-weight: 900;
+            position: relative;
+
+            sup {
+                font-size: $medium;
+                font-weight: 900;
+                color: $raising-black;
+                display: block;
+                position: absolute;
+                top: 5px;
+                right: -18px;
             }
+        }
+
+        .navbar-collapse {
+            display: none;
         }
 
         &__toggler {
             border: none;
             text-align: center;
+            color: $raising-black;
+            background-color: transparent;
 
             &__icon {
                 background: none !important;
-                font-size: 28px;
-                color: $white !important;
+                font-size: 35px;
+                color: $raising-black;
             }
 
         }

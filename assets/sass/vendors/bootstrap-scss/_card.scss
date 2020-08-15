@@ -154,7 +154,7 @@
     margin-bottom: $card-deck-margin;
   }
 
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up($bp-small) {
     display: flex;
     flex-flow: row wrap;
     margin-right: -$card-deck-margin;
@@ -182,7 +182,7 @@
     margin-bottom: $card-group-margin;
   }
 
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up($bp-small) {
     display: flex;
     flex-flow: row wrap;
     // The child selector allows nested `.card` within `.card-group`
@@ -243,7 +243,7 @@
     margin-bottom: $card-columns-margin;
   }
 
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up($bp-small) {
     column-count: $card-columns-count;
     column-gap: $card-columns-gap;
     orphans: 1;

@@ -1,7 +1,34 @@
 .footer {
-    background-color: $eerie-black;
-    height: 206px;
-    .img {
-        height: 34px;
+    background-color: $raising-black;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+
+    &__info {
+        color: $spanish-gray;
+        display: flex;
+        margin: 30px;
+        justify-content: space-between;
+        text-align: center;
+        font-size: $medium;
+        font-family: $raleway;
+        font-weight: $regular;
+
     }
-}
+
+    &__info__copyright {
+        color: $white;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+    }
+        h5 {
+            color: $spanish-gray;
+            margin: 0px;
+            font-size: $medium;
+            font-family: $raleway;
+            font-weight: $regular;
+            text-align: center;
+        }
+    }

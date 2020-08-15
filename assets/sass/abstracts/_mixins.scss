@@ -3,3 +3,12 @@
     height: $size;
     border-radius: $size;
 }
+
+// Media of at least the minimum breakpoint width. No query for the smallest breakpoint.
+// Makes the @content apply to the given breakpoint and wider.
+// Small: 576px, Medium: 768px, Large: 992px, Extra-large: 1200px.
+@mixin media-breakpoint-up($name) {
+    @media (min-width: $name) {
+        @content;
+    }
+}

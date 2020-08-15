@@ -1,5 +1,5 @@
 a.link{
-    font-family: $roboto;
+    font-family: $raleway;
     font-weight: $light;
     text-decoration: none;
 
@@ -10,7 +10,7 @@ a.link{
 
     &__secondary
     {
-        color: $raisin-black;
+        color: $raising-black;
     }
 
     &__light
@@ -25,7 +25,7 @@ a.link{
 
     &:hover
     {
-        color: $raisin-black;
+        color: $raising-black;
     }
 
     &:active

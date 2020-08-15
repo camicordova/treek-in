@@ -3,7 +3,6 @@
 @import 'abstracts/mixins';
 @import 'abstracts/placeholders';
 
-@import 'vendors/bootstrap-scss/bootstrap.scss';
 @import 'vendors/fontawesome/fontawesome.scss';
 @import 'vendors/fontawesome/solid.scss';
 
@@ -11,14 +10,15 @@
 @import 'base/typography';
 
 @import 'layout/article';
-@import 'layout/author';
+@import 'layout/features';
 @import 'layout/navigation';
+@import 'layout/prices';
 @import 'layout/grid';
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/sidebar';
 @import 'layout/forms';
-@import 'layout/title';
+@import 'layout/intro';
 
 
 @import 'components/buttons';

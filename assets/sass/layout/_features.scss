@@ -1,0 +1,19 @@
+.features {
+    padding-top: 60px;
+    &__title {
+        font-family: $raleway;
+        font-size: $x-large;
+        text-align: center;
+    }
+    &__subtitle {
+        font-family: $raleway;
+        font-size: $large;
+        text-align: center;
+    }
+    &__content {
+        font-family: $opensans;
+        font-size: $medium;
+        line-height: $x-large;
+        font-weight: $bold;
+    }
+}
