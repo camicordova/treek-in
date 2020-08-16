@@ -2,7 +2,7 @@
  * Font Awesome Free 5.14.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700;900&display=swap");
 .fa,
 .fas,
 .far,
@@ -4660,7 +4660,7 @@ body {
       position: relative; }
       .header__navbar__logo sup {
         font-size: 16px;
-        font-weight: 900;
+        font-weight: 700;
         color: #221D23;
         display: block;
         position: absolute;
