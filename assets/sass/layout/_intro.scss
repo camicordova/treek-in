@@ -11,7 +11,7 @@
         padding-top: 120px;
         background-size: contain;
         height: 120vh;
-        
+
     }
 
     &__content {
@@ -31,14 +31,15 @@
                 padding-top: 60px;
             }
         }
-        p {
-           font-size: $medium;
-           font-weight: $bold;
-           line-height: $x-large; 
 
-           @include media-breakpoint-up($bp-small) {
-            font-weight: $regular;
-        }
+        p {
+            font-size: $medium;
+            font-weight: $bold;
+            line-height: $x-large;
+
+            @include media-breakpoint-up($bp-small) {
+                font-weight: $regular;
+            }
         }
     }
 }

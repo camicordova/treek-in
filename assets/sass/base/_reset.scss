@@ -6,9 +6,11 @@ body {
 * {
     box-sizing: border-box;
 }
+
 .px-5 {
     padding-left: 25px;
     padding-right: 25px;
+
     @include media-breakpoint-up($bp-small) {
         padding-left: 120px;
         padding-right: 120px;
