@@ -4,6 +4,12 @@
     display: flex;
     flex-direction: column;
 
+    @include media-breakpoint-up($bp-small) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     &__info {
         color: $spanish-gray;
         display: flex;
@@ -13,6 +19,12 @@
         font-size: $medium;
         font-family: $raleway;
         font-weight: $regular;
+
+        h5 {
+            @include media-breakpoint-up($bp-small) {
+                padding-right: 30px;
+            }
+        }
 
     }
 

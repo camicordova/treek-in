@@ -16,7 +16,6 @@
 <body>
     <header class="header">
         <nav class="navbar navbar-expand-lg container-fluid px-5 header__navbar">
-
             <div class="header__navbar__logo">T<sup>in</sup></div>
             <button class="navbar-toggler header__navbar__toggler" type="button" data-toggle="collapse"
                 data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -26,13 +25,15 @@
                     <i class="fa fa-bars"></i>
                 </span>
             </button>
-            <div class="collapse navbar-collapse header__navbar__menu" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link" href="#"><i class="fas fa-search"></i></a>
-                    <a class="nav-item nav-link" href="#"><i class="fas fa-video"></i></a>
-                    <a class="nav-item nav-link" href="#"><i class="fas fa-plus"></i></a>
-                    <a class="nav-item nav-link" href="#"><i class="far fa-bell"></i></a>
-                    <a class="nav-item nav-link" href="#"><i class="fa fa-bars"></i></a>
+            <div class="header__navbar__menu">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#">Acerca de</a>
+                    <a class="nav-item nav-link" href="#">Características</a>
+                    <a class="nav-item nav-link" href="#">Precios</a>
+                </div>
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#">Iniciar Sesión</a>
+                    <a class="nav-item nav-link register" href="#">Regístrate</a>
                 </div>
             </div>
         </nav>
@@ -46,11 +47,17 @@
     </section>
     <section class="features px-5">
         <h2 class="features__title">Características</h2>
-        <img src="assets/images/resultado-grafico.gif" class="features__graph" />
-        <h4 class="features__subtitle">Estadísticas de tu progreso</h4>
-        <p class="features__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc non est positum in
-            nostra actione. Egone non intellego, quid sit don Graece, Latine voluptas. Cuius ad naturam apta ratio vera
-            illa et summa lex a philosophis dicitur. Quia dolori non voluptas contraria est, sed doloris privatio.</p>
+        <div class="features__wrapper">
+            <img src="assets/images/resultado-grafico.gif" class="features__graph" />
+            <div class="features__info">
+                <h4 class="features__subtitle">Estadísticas de tu progreso</h4>
+                <p class="features__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc non est
+                    positum in
+                    nostra actione. Egone non intellego, quid sit don Graece, Latine voluptas. Cuius ad naturam apta
+                    ratio vera
+                    illa et summa lex a philosophis dicitur.</p>
+            </div>
+        </div>
     </section>
     <section class="prices">
         <div class="prices__decoration">
@@ -87,7 +94,7 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer px-5">
         <div class="footer__info">
             <h5>Legal</h5>
             <h5>Cookies</h5>

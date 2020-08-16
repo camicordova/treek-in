@@ -7,18 +7,38 @@
     background-repeat: no-repeat;
     font-family: $raleway;
 
+    @include media-breakpoint-up($bp-small) {
+        padding-top: 120px;
+        background-size: contain;
+        height: 120vh;
+        
+    }
+
     &__content {
         margin-top: 15px;
+
+        @include media-breakpoint-up($bp-small) {
+            max-width: 33%;
+        }
+
         h1 {
             font-size: $xxxx-large;
             color: $raising-black;
             line-height: 60px;
             margin: 0px;
+
+            @include media-breakpoint-up($bp-small) {
+                padding-top: 60px;
+            }
         }
         p {
            font-size: $medium;
            font-weight: $bold;
            line-height: $x-large; 
+
+           @include media-breakpoint-up($bp-small) {
+            font-weight: $regular;
+        }
         }
     }
 }

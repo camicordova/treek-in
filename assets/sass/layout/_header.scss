@@ -13,11 +13,16 @@
         align-items: center;
         width: 100%;
 
+        @include media-breakpoint-up($bp-small) {
+            height: 120px;
+        }
+
         &__logo {
             font-size: $xxxxx-large;
             font-family: $raleway;
             font-weight: 900;
             position: relative;
+            flex: 0 0 auto;
 
             sup {
                 font-size: $medium;
@@ -30,15 +35,15 @@
             }
         }
 
-        .navbar-collapse {
-            display: none;
-        }
-
         &__toggler {
             border: none;
             text-align: center;
             color: $raising-black;
             background-color: transparent;
+
+            @include media-breakpoint-up($bp-small) {
+                display: none;
+            }
 
             &__icon {
                 background: none !important;
@@ -49,11 +54,29 @@
         }
 
         &__menu {
-            .nav-link {
-                color: $white !important;
+            flex: 1 1 100%;
+            margin-left: 30px;
+            display: none;
 
-                &.active {
-                    color: $fuzzy-wuzzy !important;
+            @include media-breakpoint-up($bp-small) {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .nav-link {
+                color: $nickel;
+                text-decoration: none;
+                font-family: $raleway;
+                font-size: 18px;
+                font-weight: $regular;
+                margin-left: 15px;
+                width: 100%;
+                justify-content: flex-start;
+
+                &.register {
+                    color: $white;
+                    background-color: $ball-blue;
+                    padding: 8px 15px;
                 }
             }
         }

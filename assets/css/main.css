@@ -4560,6 +4560,10 @@ body {
 .px-5 {
   padding-left: 25px;
   padding-right: 25px; }
+  @media (min-width: 576px) {
+    .px-5 {
+      padding-left: 120px;
+      padding-right: 120px; } }
 
 .article__date {
   font-size: 16px;
@@ -4574,19 +4578,42 @@ body {
 
 .features {
   padding-top: 60px; }
+  @media (min-width: 576px) {
+    .features {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 0px; } }
   .features__title {
     font-family: "raleway", sans-serif;
     font-size: 30px;
     text-align: center; }
+  @media (min-width: 576px) {
+    .features__wrapper {
+      display: flex;
+      justify-content: space-between;
+      max-width: 70%; } }
+  @media (min-width: 576px) {
+    .features__info {
+      font-family: "raleway", sans-serif;
+      max-width: 50%; } }
   .features__subtitle {
     font-family: "raleway", sans-serif;
     font-size: 20px;
     text-align: center; }
+    @media (min-width: 576px) {
+      .features__subtitle {
+        font-size: 30px;
+        text-align: left;
+        margin-bottom: 0px; } }
   .features__content {
     font-family: "open sans", serif;
     font-size: 16px;
     line-height: 30px;
     font-weight: 900; }
+    @media (min-width: 576px) {
+      .features__content {
+        font-weight: 400; } }
 
 .prices {
   display: flex;
@@ -4600,17 +4627,39 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-end; }
+    @media (min-width: 576px) {
+      .prices__decoration {
+        height: 300px; } }
     .prices__decoration h2 {
       font-family: "raleway", sans-serif;
       font-size: 30px;
       color: white;
       padding-bottom: 30px; }
+      @media (min-width: 576px) {
+        .prices__decoration h2 {
+          padding-bottom: 0px;
+          padding-top: 70px; } }
   .prices__wrapper {
-    background-color: #333745; }
+    background-color: #333745;
+    width: 100%; }
+    @media (min-width: 576px) {
+      .prices__wrapper {
+        display: flex;
+        justify-content: center; } }
+  @media (min-width: 576px) {
+    .prices__cards {
+      display: flex;
+      justify-content: space-between;
+      max-width: 70%;
+      width: 100%; } }
   .prices__cards__card {
     background-color: #FFF;
     margin-bottom: 70px;
     padding: 30px; }
+    @media (min-width: 576px) {
+      .prices__cards__card {
+        flex: 0 0 45%;
+        margin-top: 30px; } }
     .prices__cards__card h4 {
       font-size: 30px;
       font-family: "raleway", sans-serif;
@@ -4623,6 +4672,9 @@ body {
       margin-top: 0px; }
     .prices__cards__card ul {
       min-height: 300px; }
+      @media (min-width: 576px) {
+        .prices__cards__card ul {
+          min-height: 150px; } }
       .prices__cards__card ul li {
         font-family: "open sans", serif;
         font-size: 16px;
@@ -4653,11 +4705,15 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%; }
+    @media (min-width: 576px) {
+      .header__navbar {
+        height: 120px; } }
     .header__navbar__logo {
       font-size: 50px;
       font-family: "raleway", sans-serif;
       font-weight: 900;
-      position: relative; }
+      position: relative;
+      flex: 0 0 auto; }
       .header__navbar__logo sup {
         font-size: 16px;
         font-weight: 700;
@@ -4666,27 +4722,50 @@ body {
         position: absolute;
         top: 5px;
         right: -18px; }
-    .header__navbar .navbar-collapse {
-      display: none; }
     .header__navbar__toggler {
       border: none;
       text-align: center;
       color: #221D23;
       background-color: transparent; }
+      @media (min-width: 576px) {
+        .header__navbar__toggler {
+          display: none; } }
       .header__navbar__toggler__icon {
         background: none !important;
         font-size: 35px;
         color: #221D23; }
-    .header__navbar__menu .nav-link {
-      color: #FFF !important; }
-      .header__navbar__menu .nav-link.active {
-        color: #E56353 !important; }
+    .header__navbar__menu {
+      flex: 1 1 100%;
+      margin-left: 30px;
+      display: none; }
+      @media (min-width: 576px) {
+        .header__navbar__menu {
+          display: flex;
+          justify-content: space-between; } }
+      .header__navbar__menu .nav-link {
+        color: #6C6E70;
+        text-decoration: none;
+        font-family: "raleway", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        margin-left: 15px;
+        width: 100%;
+        justify-content: flex-start; }
+        .header__navbar__menu .nav-link.register {
+          color: #FFF;
+          background-color: #2AB7CA;
+          padding: 8px 15px; }
 
 .footer {
   background-color: #221D23;
   height: 150px;
   display: flex;
   flex-direction: column; }
+  @media (min-width: 576px) {
+    .footer {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; } }
   .footer__info {
     color: #8F9199;
     display: flex;
@@ -4696,6 +4775,9 @@ body {
     font-size: 16px;
     font-family: "raleway", sans-serif;
     font-weight: 400; }
+    @media (min-width: 576px) {
+      .footer__info h5 {
+        padding-right: 30px; } }
   .footer__info__copyright {
     color: #FFF;
     display: flex;
@@ -4717,17 +4799,31 @@ body {
   background-size: 160%;
   background-repeat: no-repeat;
   font-family: "raleway", sans-serif; }
+  @media (min-width: 576px) {
+    .intro {
+      padding-top: 120px;
+      background-size: contain;
+      height: 120vh; } }
   .intro__content {
     margin-top: 15px; }
+    @media (min-width: 576px) {
+      .intro__content {
+        max-width: 33%; } }
     .intro__content h1 {
       font-size: 45px;
       color: #221D23;
       line-height: 60px;
       margin: 0px; }
+      @media (min-width: 576px) {
+        .intro__content h1 {
+          padding-top: 60px; } }
     .intro__content p {
       font-size: 16px;
       font-weight: 900;
       line-height: 30px; }
+      @media (min-width: 576px) {
+        .intro__content p {
+          font-weight: 400; } }
 
 .button {
   background-color: #6C6E70;
