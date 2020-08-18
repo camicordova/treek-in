@@ -4565,6 +4565,12 @@ body {
       padding-left: 120px;
       padding-right: 120px; } }
 
+@keyframes fade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 .article__date {
   font-size: 16px;
   font-family: "raleway", sans-serif;
@@ -4593,6 +4599,11 @@ body {
       display: flex;
       justify-content: space-between;
       max-width: 70%; } }
+  .features__graph {
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    margin-top: 40px; }
   @media (min-width: 576px) {
     .features__info {
       font-family: "raleway", sans-serif;
@@ -4653,13 +4664,16 @@ body {
       max-width: 70%;
       width: 100%; } }
   .prices__cards__card {
+    grid-template-rows: auto auto 350px auto;
+    display: grid;
     background-color: #FFF;
     margin-bottom: 70px;
     padding: 30px; }
     @media (min-width: 576px) {
       .prices__cards__card {
         flex: 0 0 45%;
-        margin-top: 30px; } }
+        margin-top: 30px;
+        grid-template-rows: auto auto 1fr auto; } }
     .prices__cards__card h4 {
       font-size: 30px;
       font-family: "raleway", sans-serif;
@@ -4669,9 +4683,13 @@ body {
       font-size: 45px;
       font-family: "raleway", sans-serif;
       font-weight: 900;
-      margin-top: 0px; }
+      margin-top: 0px;
+      margin-bottom: 0px; }
     .prices__cards__card ul {
-      min-height: 300px; }
+      border-top: 1px solid #221D23;
+      border-bottom: 1px solid #221D23;
+      padding-top: 30px;
+      padding-bottom: 30px; }
       @media (min-width: 576px) {
         .prices__cards__card ul {
           min-height: 150px; } }

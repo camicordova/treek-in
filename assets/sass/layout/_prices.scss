@@ -51,6 +51,8 @@
         }
 
         &__card {
+            grid-template-rows: auto auto 350px auto;
+            display:grid;
             background-color: $white;
             margin-bottom: 70px;
             padding: 30px;
@@ -58,6 +60,7 @@
             @include media-breakpoint-up($bp-small) {
                 flex: 0 0 45%;
                 margin-top: 30px;
+                grid-template-rows: auto auto 1fr auto;
             }
 
 
@@ -73,12 +76,16 @@
                 font-size: $xxxx-large;
                 font-family: $raleway;
                 font-weight: $bold;
-                margin-top: 0px
+                margin-top: 0px;
+                margin-bottom: 0px;
             }
 
             ul {
-                min-height: 300px;
-
+                border-top: 1px solid $raising-black;
+                border-bottom: 1px solid $raising-black;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            
                 @include media-breakpoint-up($bp-small) {
                     min-height: 150px;
                 }

@@ -22,6 +22,12 @@
             max-width: 70%;
         }
     }
+    &__graph {
+        animation-name: fade;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        margin-top: 40px;
+    }
 
     &__info {
 
